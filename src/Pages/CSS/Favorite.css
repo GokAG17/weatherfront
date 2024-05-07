@@ -1,0 +1,20 @@
+.location-c {
+    display: flex;
+    justify-content: flex-end; /* Move container to the right */
+    align-items: flex-end; /* Move container to the bottom */
+    position: fixed; /* Set position to absolute */
+    right: 20px; /* Adjust the right position */
+    bottom: 20px; /* Adjust the bottom position */
+    background-color: #f2f2f2;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-s {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 400px; /* Adjust the width based on your design */
+  }
+  
+  /* Add any additional styling as needed for your specific design */
+  

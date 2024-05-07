@@ -1,0 +1,65 @@
+  html, body, #root {
+    margin: 0; 
+    padding: 0;
+    height: 100%; 
+  }
+
+/* Add this CSS to your styles */
+.css-dev-only-do-not-override-3mqfnx .ant-modal .ant-modal-content {
+  background-color: #ffffff; /* Set the desired yellow background color */
+}
+
+/* Optional: If you want to change the color of the close button */
+.css-dev-only-do-not-override-3mqfnx .ant-modal-close-x {
+  color: #ffffff; /* Set the desired close button color */
+}
+
+/* Add this CSS to your styles */
+.css-dev-only-do-not-override-3mqfnx .ant-modal .ant-modal-title {
+  background-color: #ffffff; /* Set the desired yellow color for the title */
+}
+
+
+  
+  .info-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .info-section svg {
+    margin-right: 15px;
+    color: rgb(118, 116, 116); /* White FontAwesome icons */
+  }
+  
+  .info-section .info-text {
+    margin: 0;
+    font-size: 16px;
+    color: rgb(240, 170, 170); /* White text */
+  }
+  
+  /* Additional styling for Moon icon */
+  .info-section.moon svg {
+    color: rgb(102, 101, 101); /* Grey FontAwesome icon for Moon */
+  }
+
+  /* Add this CSS to your styles */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-section svg {
+  color: rgb(102, 101, 101);
+}
+
+  
+
+
+  
+  
+  
+  
+  
+  
