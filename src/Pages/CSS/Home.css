@@ -1,0 +1,109 @@
+/* Home.css */
+
+.home {
+  height: 100%;
+}
+
+/* Sider styles */
+.ant-layout-sider {
+  background-color: #002140; /* Dark blue background color */
+}
+
+.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #1890ff; /* Highlight color for selected/hovered menu items */
+}
+
+.ant-menu-dark .ant-menu-item {
+  color: #ffffff; /* Text color for menu items */
+}
+
+.ant-menu-dark .ant-menu-item > a {
+  color: #ffffff; /* Text color for menu item links */
+}
+
+.ant-menu-dark .ant-menu-item > a:hover {
+  color: #ffffff; /* Text color for menu item links on hover */
+}
+
+.ant-menu-dark .ant-menu-submenu-title {
+  color: #ffffff; /* Text color for submenu titles */
+}
+
+.ant-menu-dark .ant-menu-submenu-arrow::before,
+.ant-menu-dark .ant-menu-submenu-arrow::after {
+  background: #ffffff; /* Color for submenu arrows */
+}
+
+/* Header styles */
+.ant-layout-header {
+  background-color: #001529; /* Dark blue background color for the header/navbar */
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-search {
+  flex-grow: 1;
+  margin: 0 16px;
+}
+
+.header-search .ant-input {
+  width: 100%;
+}
+
+.header-search .ant-btn {
+  margin-left: 8px;
+}
+
+/* Weather container styles */
+.weather-container {
+  background-color: #f0f2f5; /* Light gray background color for the weather container */
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+/* Weather data styles */
+.weather-data {
+  text-align: center;
+}
+
+.weather-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.weather-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Location selector styles */
+.location-container {
+  margin-bottom: 16px;
+}
+
+.location-select {
+  background-color: #1890ff; /* Blue background color for the location selector */
+  color: #ffffff; /* Text color for the location selector */
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.location-select h4 {
+  margin: 0;
+}
