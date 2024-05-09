@@ -1,6 +1,6 @@
 const config = {
   //apiUrl: process.env.REACT_APP_API_URL, 
-  apiUrl: "http://localhost:5000",
+  apiUrl: "http://13.49.228.69:8080",
    
 };
 

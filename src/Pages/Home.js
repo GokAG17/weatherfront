@@ -8,8 +8,8 @@ import 'leaflet/dist/leaflet.css';
 import './CSS/Home.css';
 import WorldMap from '../Components/Maps';
 import { Link } from 'react-router-dom';
-import config from '../../../config';
-const apiUrl = config.apiUrl;
+import config from '../config';
+const apiUrll = config.apiUrl;
 const { Text, Title } = Typography;
 const { Content, Sider } = Layout;
 
@@ -72,8 +72,8 @@ const Home = () => {
     try {
       setLoading(true);
       const apiUrl = searchQuery
-        ? `${apiUrl}/api/weather?city=${searchQuery}`
-        : `${apiUrl}/api/weatherByCoordinates?latitude=${latitude}&longitude=${longitude}`;
+        ? `${apiUrll}/api/weather?city=${searchQuery}`
+        : `${apiUrll}/api/weatherByCoordinates?latitude=${latitude}&longitude=${longitude}`;
 
       const response = await fetch(apiUrl, {
         method: 'GET',

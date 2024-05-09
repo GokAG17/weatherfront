@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Input, Space, Typography, Menu, Card, Modal, Button } from 'antd';
 import { EnvironmentOutlined, HomeOutlined, StarOutlined, PlusOutlined, DeleteOutlined } from '@ant-design/icons';
 import './CSS/Favorite.css';
-import config from '../../../config';
+import config from '../config';
 const apiUrl = config.apiUrl;
 const { Title, Text } = Typography;
 const { Sider, Content } = Layout;
