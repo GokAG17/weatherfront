@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloud, faSun, faCloudSun, faCloudRain, faSnowflake, faSmog } from '@fortawesome/free-solid-svg-icons';
 import { faMoon, faCloudMoon, faCloudShowersHeavy, faBolt, faQuestion, faTint, faEye, faWind, faMapMarkerAlt, faTemperatureHigh } from '@fortawesome/free-solid-svg-icons';
 import './CSS/Maps.css';
-
+import config from '../../../config';
+const apiUrl = config.apiUrl;
 const { Sider, Content } = Layout;
 const { Text } = Typography;
 
@@ -41,7 +42,7 @@ const WeatherDashboard = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:8080/api/weatherByCoordinates?latitude=${selectedLocation.latitude}&longitude=${selectedLocation.longitude}`
+        `${apiUrl}/api/weatherByCoordinates?latitude=${selectedLocation.latitude}&longitude=${selectedLocation.longitude}`
       );
 
       if (!response.ok) {

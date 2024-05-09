@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Layout, Input, Space, Typography, Menu, Card, Modal, Button } from 'antd';
 import { EnvironmentOutlined, HomeOutlined, StarOutlined, PlusOutlined, DeleteOutlined } from '@ant-design/icons';
 import './CSS/Favorite.css';
+import config from '../../../config';
+const apiUrl = config.apiUrl;
 const { Title, Text } = Typography;
 const { Sider, Content } = Layout;
 
@@ -25,7 +27,7 @@ const Favorites = () => {
 
   const fetchFavorites = async () => {
     try {
-      const response = await fetch('http://localhost:8080/favorites');
+      const response = await fetch(`${apiUrl}/favorites`);
       if (response.ok) {
         const favoritesData = await response.json();
         setFavorites(favoritesData);
@@ -46,7 +48,7 @@ const Favorites = () => {
 
       console.log('Request Body:', requestBody); // Add this line
 
-      const response = await fetch('http://localhost:8080/favorites', {
+      const response = await fetch(`${apiUrl}/favorites`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,7 +76,7 @@ const Favorites = () => {
 
   const handleFavoriteClick = async (favorite) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/weather?city=${favorite.placeName}`);
+      const response = await fetch(`${apiUrl}/api/weather?city=${favorite.placeName}`);
       if (response.ok) {
         const weatherData = await response.json();
         setSearchedLocation(favorite.placeName);
@@ -89,7 +91,7 @@ const Favorites = () => {
 
   const handleDeleteFavorite = async (favoriteId) => {
     try {
-      const response = await fetch(`http://localhost:8080/favorites?id=${favoriteId}`, {
+      const response = await fetch(`${apiUrl}/favorites?id=${favoriteId}`, {
         method: 'DELETE',
       });
 
